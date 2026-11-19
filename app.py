@@ -317,16 +317,15 @@ else:
     ### 🎯 Overview
     This project is an **AI-powered Natural Language Processing (NLP) application** engineered to automatically extract sentiment, subjectivity, and emotional orientation from unstructured text data.
 
-    ### 🛠️ Technical Stack
-    - **Language:** Python 3.12
-    - **Framework:** Streamlit
-    - **NLP Core:** NLTK VADER (Valence Aware Dictionary and sEntiment Reasoner) + TextBlob
-    - **Data Visualizations:** Plotly Interactive Charts
-    - **Data Processing:** Pandas
+    ### 🛠️ Architecture: Lexicon-Based NLP
+    - **Model:** NLTK VADER (Valence Aware Dictionary and sEntiment Reasoner)
+    - **Mechanism:** Rule-based lexical analysis using 7,500+ human-annotated sentiment scores, negation detection, and degree modifiers (not a trained machine learning classifier).
+    - **Subjectivity:** TextBlob polarity & subjectivity analysis
+    - **Frontend:** Streamlit
+    - **Visualizations:** Plotly Interactive Charts
 
     ### 👨‍💻 Developer Information
     - **Author:** Suleiman Saleem
     - **Degree:** Bachelor of Computer Science (Honours) — AI Specialization
     - **Institution:** Taylor's University
-    - **Career Track:** Work-Based Learning (WBL) 2027
     """)

@@ -16,47 +16,21 @@ Developed as part of my **Bachelor of Computer Science (Honours) in Artificial I
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## 🛠️ Architecture & How It Works
 
-* **Language:** Python 3.12+
-* **Frontend / UI:** [Streamlit](https://streamlit.io/)
-* **NLP Frameworks:** 
-  * [NLTK VADER](https://www.nltk.org/) (Valence Aware Dictionary and sEntiment Reasoner)
-  * [TextBlob](https://textblob.readthedocs.io/)
-* **Data Manipulation:** [Pandas](https://pandas.pydata.org/)
-* **Visual Analytics:** [Plotly Express & Graph Objects](https://plotly.com/python/)
+This application uses a **Lexicon and Rule-Based Natural Language Processing (NLP)** architecture powered by **NLTK VADER** and **TextBlob**, rather than a trained neural network.
 
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/suleimansaleem511/ai-sentiment-analyzer.git
-cd ai-sentiment-analyzer
-```
-
-### 2. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Run the application
-```bash
-streamlit run app.py
-```
-The app will open automatically in your browser at `http://localhost:8501`.
-
----
-
-## 📸 Screenshots & Workflow
-* **Single Text Mode:** Instant polarity gauge, emotional index, and breakdown.
-* **Batch Mode:** Upload custom review spreadsheets, preview dataset, and download enriched sentiment labels.
+### Why VADER Lexicon?
+* **Lexical Knowledge Base:** VADER relies on an extensively validated sentiment lexicon of over 7,500 human-annotated sentiment ratings (tokens, emojis, slang, acronyms).
+* **Heuristic Rules:** It applies grammatical heuristics including:
+  * **Negation handling:** Flips polarity (e.g., *"not good"*).
+  * **Punctuation & Capitalization:** Boosts sentiment intensity (e.g., *"GREAT!"* vs *"great"*).
+  * **Degree modifiers / intensifiers:** Increases or dampens valence (e.g., *"extremely bad"* vs *"barely bad"*).
+* **TextBlob Subjectivity:** Computes a subjectivity score from `0.0` (purely objective fact) to `1.0` (purely subjective opinion).
 
 ---
 
 ## 👨‍💻 Author
 **Suleiman Saleem**  
 *Computer Science (AI Specialization) — Taylor's University*  
-*Targeting Work-Based Learning (WBL) 2027*  
 * GitHub: [@suleimansaleem511](https://github.com/suleimansaleem511)
